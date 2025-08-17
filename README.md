@@ -15,12 +15,15 @@ first ingest data into lakehouse ...through upload method...in warehouse schema 
 we can upload files from local machine directly 
 there are three types of files :structured ,semi-structured,unstructured
 Structured files are organized in a table-like schema, while unstructured files lack any such organization, and semi-structured files fall in between.
-Based on the provided descriptions, files can be derived as structured or unstructured based on whether they have a predefined, fixed format. Structured files are organized in a table-like schema, while unstructured files lack any such organization, and semi-structured files fall in between.
 
 **Structured Files**
+
 This fixed schema makes the data easy to query and analyze directly.
+
 CSV (.csv):  Each line in the file represents a row, and commas separate the values into distinct columns. Its simple, tabular nature allows it to be easily parsed and loaded into databases or spreadsheets.
+
 Excel (.xlsx, .xls):  The data is organized into cells, rows, and columns, with the added capability of containing multiple sheets and advanced formatting, which maintains its structured nature.
+
 Parquet (.parquet): This is a highly optimized structured file format. It stores data in a columnar fashion, meaning all values from a single column are stored together. 
 
 **Unstructured Files**
