@@ -11,9 +11,9 @@ first ingest data into lakehouse ...through upload method...in warehouse schema 
 # Getting Data Into Lakehouse
 <img width="1486" height="603" alt="image" src="https://github.com/user-attachments/assets/4aaeef47-76ed-4b49-ad06-87d23920fc1e" />
 
-1.Upload(direct upload table from csv)
-2.Start with sample data
-3.Shortcut to Warehouse(a fact table)
-4.DataFlow
-5.Data Factory pipeline
+# 1.Upload(direct upload table from csv)
+# 2.Start with sample data
+# 3.Shortcut to Warehouse(a fact table)
+# 4.DataFlow
+# 5.Data Factory pipeline
 
