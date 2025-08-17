@@ -45,6 +45,7 @@ we can upload sample data through sample datasets.
 <img width="1218" height="341" alt="image" src="https://github.com/user-attachments/assets/24f6962e-da9e-48dc-a070-db11949c6853" />
 
 # 3.Shortcut to Warehouse(a fact table)
+we can shortcut data from internal or external database.
 <img width="1532" height="814" alt="image" src="https://github.com/user-attachments/assets/7ee10022-4ac6-4570-849f-3b0ac6fc2535" />
 
 # 4.DataFlow
