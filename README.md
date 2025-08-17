@@ -21,23 +21,24 @@ Structured files are organized in a table-like schema, while unstructured files 
 
 This fixed schema makes the data easy to query and analyze directly.
 
-CSV (.csv):  Each line in the file represents a row, and commas separate the values into distinct columns. Its simple, tabular nature allows it to be easily parsed and loaded into databases or spreadsheets.
+**CSV (.csv): ** Each line in the file represents a row, and commas separate the values into distinct columns. Its simple, tabular nature allows it to be easily parsed and loaded into databases or spreadsheets.
 
-Excel (.xlsx, .xls):  The data is organized into cells, rows, and columns, with the added capability of containing multiple sheets and advanced formatting, which maintains its structured nature.
+**Excel (.xlsx, .xls):**  The data is organized into cells, rows, and columns, with the added capability of containing multiple sheets and advanced formatting, which maintains its structured nature.
 
-Parquet (.parquet): This is a highly optimized structured file format. It stores data in a columnar fashion, meaning all values from a single column are stored together. 
+**Parquet (.parquet):** This is a highly optimized structured file format. It stores data in a columnar fashion, meaning all values from a single column are stored together. 
+
 
 **Unstructured Files**
 
 Unstructured files do not follow any predefined schema or format. 
 
-Text (.txt):  A basic text file is simply a stream of characters without any inherent tags, separators, or organization.
+**Text (.txt): ** A basic text file is simply a stream of characters without any inherent tags, separators, or organization.
 
 **Semi-structured Files**
 
 Semi-structured files are a hybrid that contain some organizational properties but do not fit into a rigid, tabular model. They use tags or key-value pairs to organize data, but the fields may be nested, optional, or have a variable number of attributes.
 
-JSON (.json): It uses nested key-value pairs to represent data. While it has a defined hierarchy, not every record has to contain the same fields, and the structure can be more complex than a simple table. 
+**JSON (.json):** It uses nested key-value pairs to represent data. While it has a defined hierarchy, not every record has to contain the same fields, and the structure can be more complex than a simple table. 
 
 # 2.Start with sample data
 we can upload sample data through sample datasets.
