@@ -12,6 +12,7 @@ first ingest data into lakehouse ...through upload method...in warehouse schema 
 <img width="1486" height="603" alt="image" src="https://github.com/user-attachments/assets/4aaeef47-76ed-4b49-ad06-87d23920fc1e" />
 
 # 1.Upload(direct upload table from csv)
+
 we can upload files from local machine directly 
 there are three types of files :structured ,semi-structured,unstructured
 Structured files are organized in a table-like schema, while unstructured files lack any such organization, and semi-structured files fall in between.
@@ -27,11 +28,15 @@ Excel (.xlsx, .xls):  The data is organized into cells, rows, and columns, with 
 Parquet (.parquet): This is a highly optimized structured file format. It stores data in a columnar fashion, meaning all values from a single column are stored together. 
 
 **Unstructured Files**
+
 Unstructured files do not follow any predefined schema or format. 
+
 Text (.txt):  A basic text file is simply a stream of characters without any inherent tags, separators, or organization.
 
 **Semi-structured Files**
+
 Semi-structured files are a hybrid that contain some organizational properties but do not fit into a rigid, tabular model. They use tags or key-value pairs to organize data, but the fields may be nested, optional, or have a variable number of attributes.
+
 JSON (.json): It uses nested key-value pairs to represent data. While it has a defined hierarchy, not every record has to contain the same fields, and the structure can be more complex than a simple table. 
 
 # 2.Start with sample data
