@@ -21,7 +21,7 @@ Structured files are organized in a table-like schema, while unstructured files 
 
 This fixed schema makes the data easy to query and analyze directly.
 
-**CSV (.csv): **  Each line in the file represents a row, and commas separate the values into distinct columns. Its simple, tabular nature allows it to be easily parsed and loaded into databases or spreadsheets.
+**CSV (.csv):**  Each line in the file represents a row, and commas separate the values into distinct columns. Its simple, tabular nature allows it to be easily parsed and loaded into databases or spreadsheets.
 
 **Excel (.xlsx, .xls):**  The data is organized into cells, rows, and columns, with the added capability of containing multiple sheets and advanced formatting, which maintains its structured nature.
 
@@ -32,7 +32,7 @@ This fixed schema makes the data easy to query and analyze directly.
 
 Unstructured files do not follow any predefined schema or format. 
 
-**Text (.txt): **  A basic text file is simply a stream of characters without any inherent tags, separators, or organization.
+**Text (.txt):**  A basic text file is simply a stream of characters without any inherent tags, separators, or organization.
 
 **Semi-structured Files**
 
