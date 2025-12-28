@@ -86,4 +86,3 @@ To complete the "Risk Management" aspect, the next phase involves:
 
 ---
 
-**Would you like me to help you draft the Python code for a Fabric Notebook to handle the Price Forecasting (ML) part of this project?**
