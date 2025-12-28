@@ -35,7 +35,7 @@ A robust data platform must handle diverse data types. In this project, we utili
 ### Ingestion Methods Employed:
 <img width="1486" height="603" alt="image" src="https://github.com/user-attachments/assets/4aaeef47-76ed-4b49-ad06-87d23920fc1e" />
 
-* **Direct Upload:** Quick ingestion of local CSV files directly into the Lakehouse "Files" section.
+* **Upload Files:** Quick ingestion of local CSV files directly into the Lakehouse "Files" section.
 * **OneLake Shortcuts:** Live virtualization of data from the **Data Warehouse** into the **Lakehouse**, avoiding data duplication.
 * **Data Factory Pipelines:** Orchestrated movement of data for automated, recurring loads.
 * **Dataflow Gen2:** Low-code "Power Query" experience to clean data before it hits the table layer.
