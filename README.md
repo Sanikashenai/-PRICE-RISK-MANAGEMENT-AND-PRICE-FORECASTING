@@ -14,7 +14,9 @@ first ingest data into lakehouse ...through upload method...in warehouse schema 
 # 1.Upload(direct upload table from csv)
 
 we can upload files from local machine directly 
-there are three types of files :structured ,semi-structured,unstructured
+there are three types of files :Structured 
+                                Semi-structured
+                                Unstructured
 Structured files are organized in a table-like schema, while unstructured files lack any such organization, and semi-structured files fall in between.
 
 **Structured Files**
