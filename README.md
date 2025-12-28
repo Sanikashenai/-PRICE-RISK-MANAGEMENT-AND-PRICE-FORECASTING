@@ -36,7 +36,10 @@ A robust data platform must handle diverse data types. In this project, we utili
 <img width="1486" height="603" alt="image" src="https://github.com/user-attachments/assets/4aaeef47-76ed-4b49-ad06-87d23920fc1e" />
 
 * **Upload Files:** Quick ingestion of local CSV files directly into the Lakehouse "Files" section.
+* **Start with sample data:** Upload sample data through sample datasets.
+  <img width="1218" height="341" alt="image" src="https://github.com/user-attachments/assets/24f6962e-da9e-48dc-a070-db11949c6853" />
 * **OneLake Shortcuts:** Live virtualization of data from the **Data Warehouse** into the **Lakehouse**, avoiding data duplication.
+  <img width="1532" height="814" alt="image" src="https://github.com/user-attachments/assets/7ee10022-4ac6-4570-849f-3b0ac6fc2535" />
 * **Data Factory Pipelines:** Orchestrated movement of data for automated, recurring loads.
 * **Dataflow Gen2:** Low-code "Power Query" experience to clean data before it hits the table layer.
 
