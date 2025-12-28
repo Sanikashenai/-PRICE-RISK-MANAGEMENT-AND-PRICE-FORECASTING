@@ -1,55 +1,81 @@
-# PRICE-RISK-MANAGEMENT-AND-PRICE-FORECASTING
-This is end to end microsoft fabric project that analyze and predict price  
+# 🚀 Price Risk Management & Forecasting
 
+This project demonstrates a complete data engineering and analytics lifecycle—from multi-source ingestion to machine learning-based price forecasting—all unified within the **Microsoft Fabric** environment.
 
+---
 
+## 🏗️ The Architecture
 https://github.com/user-attachments/assets/ea9ffae9-a853-4c30-bbba-f026bd87f2c2
+The project follows a modern "Medallion" or "Lakehouse" architecture pattern, ensuring data is cleaned, modeled, and ready for high-performance reporting.
 
+### Core Workflow:
 
-first ingest data into lakehouse ...through upload method...in warehouse schema we can get data fthrough  datflow or pipeline in warehouse then add shortcut to load that data data into lakehouse ...ingest data through into various types through database..pipeline ..shortcut..dataflow...and Turn CSV files to tables using the “Load to Tables” and now lakehouse shifted to sql analytics endpoint mode...Create relationships between the tables ... Create measures of various aggregate functions..built power bi report on basis of total order presented according to month country
+1. **Ingestion:** Multi-modal data intake (Upload, Shortcuts, Data Pipelines).
+2. **Storage:** Unified OneLake storage using the **Lakehouse** and **SQL Warehouse**.
+3. **Transformation:** Conversion of raw CSV/JSON to optimized Delta Parquet tables.
+4. **Modeling:** Establishing a Star Schema in the SQL Analytics Endpoint.
+5. **Visualization:** Interactive Power BI reports for global order distribution.
 
-# Getting Data Into Lakehouse
-<img width="1486" height="603" alt="image" src="https://github.com/user-attachments/assets/4aaeef47-76ed-4b49-ad06-87d23920fc1e" />
+---
 
-# 1.Upload(direct upload table from csv)
+## 📥 Stage 1: Data Ingestion Strategies
 
-we can upload files from local machine directly 
-there are three types of files :Structured 
-                                Semi-structured
-                                Unstructured
-Structured files are organized in a table-like schema, while unstructured files lack any such organization, and semi-structured files fall in between.
+A robust data platform must handle diverse data types. In this project, we utilize three distinct data structures:
 
-**Structured Files**
+| Data Type | Format Used | Description |
+| --- | --- | --- |
+| **Structured** | `.csv`, `.parquet`, `.xlsx` | Tabular data with a fixed schema; ready for immediate SQL querying. |
+| **Semi-Structured** | `.json` | Nested key-value pairs; flexible but hierarchical. |
+| **Unstructured** | `.txt` | Raw character streams; requires parsing for insights. |
 
-This fixed schema makes the data easy to query and analyze directly.
+### Ingestion Methods Employed:
 
-**CSV (.csv):**  Each line in the file represents a row, and commas separate the values into distinct columns. Its simple, tabular nature allows it to be easily parsed and loaded into databases or spreadsheets.
+* **Direct Upload:** Quick ingestion of local CSV files directly into the Lakehouse "Files" section.
+* **OneLake Shortcuts:** Live virtualization of data from the **Data Warehouse** into the **Lakehouse**, avoiding data duplication.
+* **Data Factory Pipelines:** Orchestrated movement of data for automated, recurring loads.
+* **Dataflow Gen2:** Low-code "Power Query" experience to clean data before it hits the table layer.
 
-**Excel (.xlsx, .xls):**  The data is organized into cells, rows, and columns, with the added capability of containing multiple sheets and advanced formatting, which maintains its structured nature.
+---
 
-**Parquet (.parquet):**  This is a highly optimized structured file format. It stores data in a columnar fashion, meaning all values from a single column are stored together. 
+## 🛠️ Stage 2: Data Engineering & Transformation
 
+Once the data is in OneLake, we transition from raw files to high-performance tables.
 
-**Unstructured Files**
+### 1. From Files to Delta Tables
 
-Unstructured files do not follow any predefined schema or format. 
+Using the **"Load to Tables"** feature, we convert raw CSVs into optimized Delta Lake tables. This allows for:
 
-**Text (.txt):**  A basic text file is simply a stream of characters without any inherent tags, separators, or organization.
+* **ACID Transactions:** Ensuring data integrity.
+* **Time Travel:** Querying previous versions of the data.
+* **Performance:** Faster read/write speeds for large datasets.
 
-**Semi-structured Files**
+### 2. The SQL Analytics Endpoint
 
-Semi-structured files are a hybrid that contain some organizational properties but do not fit into a rigid, tabular model. They use tags or key-value pairs to organize data, but the fields may be nested, optional, or have a variable number of attributes.
+By shifting the Lakehouse to **SQL Analytics Mode**, we unlock a full T-SQL experience. Here, we:
 
-**JSON (.json):**  It uses nested key-value pairs to represent data. While it has a defined hierarchy, not every record has to contain the same fields, and the structure can be more complex than a simple table. 
+* Define **Primary and Foreign Key relationships** between Fact and Dimension tables.
+* Write complex **DAX measures** for aggregate functions (e.g., Total Revenue, YoY Price Variance).
 
-# 2.Start with sample data
-we can upload sample data through sample datasets.
-<img width="1218" height="341" alt="image" src="https://github.com/user-attachments/assets/24f6962e-da9e-48dc-a070-db11949c6853" />
+---
 
-# 3.Shortcut to Warehouse(a fact table)
-we can shortcut data from internal or external database.
-<img width="1532" height="814" alt="image" src="https://github.com/user-attachments/assets/7ee10022-4ac6-4570-849f-3b0ac6fc2535" />
+## 📊 Stage 3: Analytics & Visualization
 
-# 4.DataFlow
-# 5.Data Factory pipeline
+The final layer turns raw data into business intelligence.
 
+* **Geospatial Analysis:** Visualizing total orders by country to identify high-risk price zones.
+* **Temporal Trends:** Analyzing order volume by month to detect seasonality.
+* **Real-time Connection:** Utilizing **Direct Lake** mode in Power BI for near-instant reporting on Lakehouse data without the need for manual refreshes.
+
+---
+
+## 🔮 Future Enhancements (Price Forecasting)
+
+To complete the "Risk Management" aspect, the next phase involves:
+
+* **Synapse ML:** Training a Time-Series model in a Fabric Notebook.
+* **Forecasting:** Predicting price volatility for the next 6 months.
+* **Automated Alerts:** Using Data Activator to trigger emails if prices exceed a specific risk threshold.
+
+---
+
+**Would you like me to help you draft the Python code for a Fabric Notebook to handle the Price Forecasting (ML) part of this project?**
