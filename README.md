@@ -5,7 +5,11 @@ This project demonstrates a complete data engineering and analytics lifecycle—
 ---
 
 ## 🏗️ The Architecture
-ea9ffae9-a853-4c30-bbba-f026bd87f2c2
+
+
+https://github.com/user-attachments/assets/236ea05a-8b52-4755-9e0c-44c3398a3733
+
+
 The project follows a modern "Medallion" or "Lakehouse" architecture pattern, ensuring data is cleaned, modeled, and ready for high-performance reporting.
 
 ### Core Workflow:
