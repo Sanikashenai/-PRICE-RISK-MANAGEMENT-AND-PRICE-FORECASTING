@@ -33,6 +33,7 @@ A robust data platform must handle diverse data types. In this project, we utili
 | **Unstructured** | `.txt` | Raw character streams; requires parsing for insights. |
 
 ### Ingestion Methods Employed:
+<img width="1486" height="603" alt="image" src="https://github.com/user-attachments/assets/4aaeef47-76ed-4b49-ad06-87d23920fc1e" />
 
 * **Direct Upload:** Quick ingestion of local CSV files directly into the Lakehouse "Files" section.
 * **OneLake Shortcuts:** Live virtualization of data from the **Data Warehouse** into the **Lakehouse**, avoiding data duplication.
